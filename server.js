@@ -18,9 +18,8 @@ const server = http.createServer((req, res) => {
             fs.writeFile('message.txt', body, function(err) {
                 if (err) {
                     throw err
-                    }
                 }
-            )
+            })
             res.end('ok')
         })
     } else {
